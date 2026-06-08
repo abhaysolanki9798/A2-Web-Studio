@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+header{
+    width:100%;
+    background:#0b051d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 5%;
+    position:relative;
+    
+}
+
+.logo{
+    width:20%;
+}
+
+.logo img{
+    width:100px;
+    display:block;
+}
+
+/* Navigation */
+
+.navigation{
+    width:60%;
+}
+
+.navigation ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
+}
+
+.navigation ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.navigation ul li a:hover{
+    color:#8b5cf6;
+}
+.navigation ul li a{
+    color:#e9e4e4;
+    text-decoration:none;
+    position:relative;  
+    padding-bottom:5px;
+}
+
+.navigation ul li a::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:0;
+    height:2px;
+    background:#8b5cf6;
+    transition:all 0.3s ease;
+    transform:translateX(-50%);
+}
+
+.navigation ul li a:hover::after{
+    width:100%;
+}
+
+/* Call Button */
+
+.call-btn{
+    display:inline-block;
+    background:transparent;
+    border:#8b5cf6 1px solid;
+    color:#afaaaa;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.call-btn:hover{
+    background:#6d28d9;
+    color:#fff;
+}
+
+/* Toggle Button */
+
+.toggle-btn{
+    display:none;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .navigation{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#0b051d;
+    }
+
+    .navigation.active{
+        display:block;
+    }
+
+    .navigation ul{
+        flex-direction:column;
+        gap:0;
+    }
+
+    .navigation ul li{
+        text-align:center;
+        padding:15px;
+        border-bottom:1px solid #444;
+    }
+
+    .header-btn{
+        display:none;
+    }
+
+    .toggle-btn{
+        display:block;
+    }
+
+    .logo{
+        width:auto;
+    }
+
+    .logo img{
+        width:65px;
+    }
+}
+
+/*=========================================
+          Banner Section
+=================================================================*/
+
+.banner{
+    width:100%;
+    height:100vh;
+    background:url("img/b1.jpeg") no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 5%;
+}
+.banner-content{
+    text-align:center;
+    color:#fff;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+}
+.banner-content h1{
+    font-size:75px;
+    margin-bottom:20px;
+    text-align:justify;
+    line-height:1;
+}
+.banner-content p{
+    font-size:18px;
+    margin-bottom:30px;
+    text-align:justify;
+    line-height:1.6;
+    color:rgb(134, 128, 128);
+}
+.banner-content .btn{
+    display:inline-block;
+    background:#8b5cf6;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.banner-content-b{
+    width:50%;
+}
+.banner button{
+    display:inline-block;
+   background:transparent;
+   border:1px solid #8b5cf6;
+    color:#afaaaa;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-weight:600;
+    transition:0.3s;
+    
+}
+.banner button:hover{
+    background:#8b5cf6;
+    color:#fff;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .banner{
+    height:auto;
+  }
+  
+  .banner-content{
+    width:100%;
+     align-items:center;
+     text-align:center;
+  }
+  .banner-content h1 {
+    font-size: 42px;
+    margin-bottom: 6px;
+    text-align: justify;
+    line-height: 1;
+}
+  .banner-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    color: rgb(134, 128, 128);
+  
+}
+.banner-content-b{
+    display:none;
+}
+}
