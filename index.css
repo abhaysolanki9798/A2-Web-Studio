@@ -153,12 +153,12 @@ header{
 
 .banner{
     width:100%;
-    height:100vh;
+    height:auto;
     background:url("img/b1.jpeg") no-repeat center center/cover;
     display:flex;
-    justify-content:center;
+    justify-content:left;
     align-items:center;
-    padding:80px 5%;
+    padding: 50px 5% 10px;
 }
 .banner-content{
     text-align:center;
@@ -193,9 +193,7 @@ header{
     transition:0.3s;
 }
 
-.banner-content-b{
-    width:50%;
-}
+
 .banner button{
     display:inline-block;
    background:transparent;
@@ -211,6 +209,28 @@ header{
 .banner button:hover{
     background:#8b5cf6;
     color:#fff;
+}
+
+.icon{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#fff;
+    padding-top:30px;
+}
+.icon i{
+    font-size:36px;
+    
+}
+.icon span{
+    font-size:14px;
+    white-space:nowrap;
+    border-right:1.5px solid #aa88fa;
+    padding:10px;
+    
+}
+.icon span:last-child{
+    border-right:none;
 }
 
 @media screen and (max-width: 768px) {
@@ -238,8 +258,8 @@ header{
     color: rgb(134, 128, 128);
   
 }
-.banner-content-b{
-    display:none;
+.icon{
+    display: none;
 }
 }
 
@@ -392,7 +412,8 @@ header{
     }
 
     .offer-list li{
-        font-size:17px;
+        font-size:14px;
+        margin:5px;
         
     }
     .offer-list {
@@ -471,4 +492,16 @@ header{
         width: 80%;
         margin-bottom: 30px;
     }
+}
+
+/*===========================================
+                tech section
+==============================================*/
+
+.tech{
+    background-image: url("img/worldClass.jpg");
+     background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:100vh;
 }
