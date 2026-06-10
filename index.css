@@ -289,7 +289,7 @@ header{
 }
 
 .service-item {
-    background: #fff;
+    background: #c0bdbd;
     padding: 30px;
     border-radius: 8px;
     width: 30%;
@@ -452,7 +452,7 @@ header{
 
 .step {
     width: 22%;
-    background: #f0f0f0;
+    background: #d3cece;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -479,7 +479,7 @@ header{
 
 .step p {
     font-size: 16px;
-    color: #555;
+    color: #9c9a9a;
     line-height: 1.6;
 }
 
@@ -495,13 +495,338 @@ header{
 }
 
 /*===========================================
-                tech section
+                Serving section
 ==============================================*/
 
-.tech{
-    background-image: url("img/worldClass.jpg");
-     background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
-    height:100vh;
+
+.logo-slider{
+    overflow: hidden;
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("img/bg.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-slider h2{
+    color: #d3cccc;
+    font-size: 40px;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+.logo-slide-track{
+    display: flex;
+    width: calc(250px * 16);
+    animation: scroll 25s linear infinite;
+}
+
+.logo-slider:hover .logo-slide-track{
+    animation-play-state: paused;
+}
+
+.slide{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img{
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    transition: 0.4s ease;
+}
+
+.slide img:hover{
+    transform: scale(1.15);
+}
+
+.slide p{
+    color: rgb(223, 219, 219);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    .logo-slider{
+        padding: 60px 0;
+    }
+
+    .logo-slider h2{
+        font-size: 28px;
+    }
+
+    .slide{
+        width: 180px;
+    }
+
+    .slide img{
+        width: 90px;
+        height: 60px;
+    }
+
+    .slide p{
+        font-size: 14px;
+    }
+}
+
+/*==================================================
+            plan section
+=====================================================*/
+
+.pricing-section{
+    padding: 100px 20px;
+    background-image:url("img/bg.jpeg");
+    background-size:cover;
+    background-position:center;
+    text-align: center;
+}
+
+.pricing-section h2{
+    font-size: 42px;
+    margin-bottom: 60px;
+    color: #dddada;
+}
+
+.pricing-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pricing-card{
+    width: 350px;
+    background: #d6d4d4;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: .4s;
+    position: relative;
+}
+
+.pricing-card:hover{
+    transform: translateY(-10px);
+}
+
+.pricing-card h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.price{
+    font-size: 42px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 25px;
+}
+
+.pricing-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.pricing-card ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.plan-btn:hover{
+    background: #0056b3;
+}
+
+.featured{
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+.featured .price{
+    color: #fff;
+}
+
+.featured .plan-btn{
+    background: white;
+    color: #007bff;
+}
+
+.badge{
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #ff9800;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .pricing-card{
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .pricing-section h2{
+        font-size: 30px;
+        padding: 40px 30px;
+    }
+}
+
+/*==================================
+            Footer
+=================================================*/
+
+.footer{
+    background:#0b051d;
+    color:#fff;
+    padding:70px 0 0;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+    padding:0 20px;
+}
+
+.footer-box{
+    flex:1;
+    min-width:250px;
+}
+
+.footer-box h3{
+    font-size:24px;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.footer-box h3::after{
+    content:"";
+    width:50px;
+    height:3px;
+    background:#007bff;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+}
+
+.footer-box p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.footer-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-box ul li{
+    margin:12px 0;
+}
+
+.footer-box ul li a{
+    color:#ccc;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-box ul li a:hover{
+    color:#007bff;
+    padding-left:5px;
+}
+
+.social-links{
+    margin-top:20px;
+    display:flex;
+    gap:12px;
+}
+
+.social-links a{
+    width:40px;
+    height:40px;
+    background:#222;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#007bff;
+    transform:translateY(-5px);
+}
+
+.footer-bottom{
+    margin-top:50px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    text-align:center;
+    padding:20px;
+}
+
+.footer-bottom p{
+    margin:0;
+    color:#aaa;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-box h3::after{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .social-links{
+        justify-content:center;
+    }
 }
