@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Web Studio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+<style>
+  .contact-banner{
+    background:#0f172a;
+    color:#e7e6e6;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.contact-banner h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.contact-banner p{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-section{
+    padding:30px;
+    background-color: #0f172a;
+    color: #e6e2e2;
+}
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-info h2,
+.contact-form h2{
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    line-height:1.8;
+}
+
+.info-box{
+    margin-top:25px;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    outline:none;
+    background-color: #ddd;
+}
+
+.contact-form button{
+    padding:15px;
+    border:none;
+    background:#ff6b00;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.contact-form button:hover{
+    background:#e55f00;
+}
+
+.why-contact{
+    background:#0f172a;
+    padding:80px 0;
+    text-align:center;
+}
+
+.why-contact h2{
+    margin-bottom:50px;
+    color: #ddd;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-box{
+    background:#ebe4e4;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+@media(max-width:768px){
+
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .contact-banner h1{
+        font-size:35px;
+    }
+    .container{
+      padding: 20px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="img/logo1.png" alt="A2 Web Studio">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Call Button -->
+    <div class="header-btn">
+        <a href="tel:+919999999999" class="call-btn">
+            Call Now
+        </a>
+    </div>
+
+    <!-- Toggle Button -->
+    <div class="toggle-btn">
+        ☰
+    </div>
+
+</header>
+<!--==========================================================
+            Contact Section
+===============================================================-->
+<!-- Contact Hero Section -->
+<section class="contact-banner">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Let's discuss your next project. We're here to help your business grow online.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container contact-wrapper">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>
+                Have a project in mind? Whether you need a business website,
+                eCommerce store, landing page, or website redesign, our team
+                is ready to assist you.
+            </p>
+
+            <div class="info-box">
+                <h4>📍 Office Address</h4>
+                <p>Ahmedabad, Gujarat, India</p>
+            </div>
+
+            <div class="info-box">
+                <h4>📧 Email Us</h4>
+                <p>info@a2webstudio.com</p>
+            </div>
+
+            <div class="info-box">
+                <h4>📞 Call Us</h4>
+                <p>+91 XXXXX XXXXX</p>
+            </div>
+
+            <div class="info-box">
+                <h4>⏰ Working Hours</h4>
+                <p>Monday - Saturday : 9:00 AM - 7:00 PM</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Message</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="tel" placeholder="Phone Number">
+
+                <input type="text" placeholder="Subject">
+
+                <textarea rows="6" placeholder="Tell us about your project..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Contact Us -->
+<section class="why-contact">
+    <div class="container">
+        <h2>Why Choose A2 Web Studio?</h2>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>🚀 Fast Delivery</h3>
+                <p>We deliver high-quality websites within committed timelines.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>💻 Modern Design</h3>
+                <p>Creative and responsive designs that work on all devices.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🔧 Technical Support</h3>
+                <p>Dedicated support and maintenance after project completion.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>📈 Business Growth</h3>
+                <p>Web solutions focused on increasing your online presence.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/919999999999?text=Hello%20A2%20Web%20Studio,%20I%20want%20a%20website."
+   class="whatsapp-float"
+   target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!--=====================================================
+                Footer
+==============================================================-->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Company Info -->
+        <div class="footer-box">
+            <h3>A2 Web Studio</h3>
+            <p>
+                We provide professional website development,
+                UI/UX design and digital solutions for businesses worldwide.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Website Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO Services</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Website Maintenance</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>📧 info@a2webstudio.com</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📍 Gujarat, India</p>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 A2 Web Studio. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Web Studio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+.services-hero{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.services-hero span{
+    color:#f97316;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.services-hero h1{
+    font-size:55px;
+    max-width:800px;
+    margin:20px auto;
+    font-family:'Poppins',sans-serif;
+}
+
+.services-hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.services-section{
+    background:#0f172a;
+    padding:80px 0;
+}
+
+.services-section .container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:#1e293b;
+    padding:35px;
+    border-radius:15px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card .icon{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.service-card h2{
+    color:#fff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.service-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* Tablet */
+@media(max-width:991px){
+    .services-section .container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .services-hero h1{
+        font-size:42px;
+    }
+}
+
+/* Mobile */
+@media(max-width:767px){
+
+    .services-section .container{
+        grid-template-columns:1fr;
+        padding: 20px;
+    }
+
+    .services-hero{
+        padding:80px 15px;
+    }
+
+    .services-hero h1{
+        font-size:32px;
+    }
+
+    .service-card{
+        padding:25px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="img/logo1.png" alt="A2 Web Studio">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Call Button -->
+    <div class="header-btn">
+        <a href="tel:+919999999999" class="call-btn">
+            Call Now
+        </a>
+    </div>
+
+    <!-- Toggle Button -->
+    <div class="toggle-btn">
+        ☰
+    </div>
+
+</header>
+<a href="https://wa.me/919999999999?text=Hello%20A2%20Web%20Studio,%20I%20want%20a%20website."
+   class="whatsapp-float"
+   target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!---===========================================================
+                Services Section
+==============================================================-->
+
+<section class="services-hero">
+    <div class="container">
+        <span>OUR SERVICES</span>
+        <h1>Digital Solutions That Grow Your Business</h1>
+        <p>
+            At A2 Web Studio, we create powerful digital experiences that help
+            businesses establish a strong online presence, attract customers,
+            and increase revenue.
+        </p>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="container">
+
+```
+    <div class="service-card">
+        <div class="icon">🌐</div>
+        <h2>Website Development</h2>
+        <p>
+            Professional, responsive, and high-performance websites
+            designed to showcase your brand and convert visitors into customers.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="icon">🛒</div>
+        <h2>E-Commerce Development</h2>
+        <p>
+            Custom online stores with secure payment integration,
+            product management, and seamless shopping experiences.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="icon">📱</div>
+        <h2>Landing Page Design</h2>
+        <p>
+            High-converting landing pages built specifically for
+            marketing campaigns, lead generation, and product launches.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="icon">🎨</div>
+        <h2>UI / UX Design</h2>
+        <p>
+            Modern and user-friendly designs focused on improving
+            engagement and delivering a smooth customer experience.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="icon">⚡</div>
+        <h2>Website Optimization</h2>
+        <p>
+            Speed optimization, mobile responsiveness, and performance
+            improvements for better user experience and SEO.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <div class="icon">🔧</div>
+        <h2>Maintenance & Support</h2>
+        <p>
+            Ongoing website maintenance, updates, security checks,
+            and technical support whenever you need it.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+
+<!--=====================================================
+                Footer
+==============================================================-->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Company Info -->
+        <div class="footer-box">
+            <h3>A2 Web Studio</h3>
+            <p>
+                We provide professional website development,
+                UI/UX design and digital solutions for businesses worldwide.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Website Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO Services</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Website Maintenance</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>📧 info@a2webstudio.com</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📍 Gujarat, India</p>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 A2 Web Studio. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
